@@ -1,0 +1,134 @@
+@keyframes rotate {
+	to {
+	  offset-distance: 100%;
+	}
+  }
+  
+  .solarSystemBackground-animating::after {
+	animation: rotate var(--t, 3s) linear infinite;
+  }
+  
+  .solarSystemBackground-wrapper {
+	width: 100%;
+	height: unset;
+	margin: 0;
+	color: var(--color-secondary-800);
+  }
+  
+  .solarSystemBackground-wrapper ol {
+	display: grid;
+	width: 100%;
+	height: unset;
+	aspect-ratio: 1 / 1;
+	container-type: inline-size;
+  }
+  
+  @media (min-width: 992px) {
+	.solarSystemBackground-wrapper ol {
+	  width: unset;
+	  height: 100%;
+	}
+  }
+  
+  .solarSystemBackground-wrapper ol li {
+	display: grid;
+	grid-area: 1 / -1;
+	width: var(--d, 2cqi);
+	border: 1px dashed;
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+	place-self: center;
+  }
+  
+  .solarSystemBackground-wrapper ol li::after {
+	display: block;
+	width: var(--w, 2cqi);
+	background: var(--b, hsl(0deg 0% 50%));
+	border-radius: 50%;
+	box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+	content: '';
+	aspect-ratio: 1 / 1;
+	offset-path: content-box;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-sun {
+	--b: radial-gradient(circle, #f9d71c 0%, #f9a825 50%, #f9a825 100%);
+	--d: 10cqi;
+	--w: 8cqi;
+	border: 0;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-sun::after {
+	animation: none;
+	offset-path: none;
+	place-self: center;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-mercury {
+	--b: radial-gradient(circle, #c2c2c2 0%, #8a8a8a 100%);
+	--d: 15cqi;
+	--t: 2105.26ms;
+	--w: 2.0526cqi;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-venus {
+	--b: radial-gradient(circle, #f4d03f 0%, #c39c43 100%);
+	--d: 25cqi;
+	--t: 4210.53ms;
+	--w: 2.6053cqi;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-earth {
+	--b: radial-gradient(circle, #3a82f7 0%, #2f9e44 80%, #1a5e20 100%);
+	--d: 35cqi;
+	--t: 6315.79ms;
+	--w: 3.1579cqi;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-mars {
+	--b: radial-gradient(circle, #e57373 0%, #af4448 100%);
+	--d: 45cqi;
+	--t: 8421.05ms;
+	--w: 3.7105cqi;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-jupiter {
+	--b: radial-gradient(circle, #d4a373 0%, #b36d32 50%, #f4e7d3 100%);
+	--d: 60cqi;
+	--t: 12631.58ms;
+	--w: 4.8158cqi;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-saturn {
+	--b: radial-gradient(circle, #e6dba0 0%, #c2a13e 100%);
+	--d: 75cqi;
+	--t: 14736.84ms;
+	--w: 5.3684cqi;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-uranus {
+	--b: radial-gradient(circle, #7de3f4 0%, #3ba0b5 100%);
+	--d: 84.5cqi;
+	--t: 10526.32ms;
+	--w: 4.2632cqi;
+  }
+  
+  .solarSystemBackground-wrapper ol .solarSystemBackground-neptune {
+	--b: radial-gradient(circle, #4c6ef5 0%, #1b3b8c 100%);
+	--d: 94cqi;
+	--t: 20000ms;
+	--w: 6cqi;
+  }
+  
+  @media (min-width: 992px) {
+	.solarSystemBackground-wrapper {
+	  width: unset;
+	  height: 100%;
+	}
+  
+	.solarSystemBackground-wrapper ol {
+	  width: unset;
+	  height: 100%;
+	}
+  }
+  

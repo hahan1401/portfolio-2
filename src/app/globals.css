@@ -1,16 +1,69 @@
 @import "tailwindcss";
 
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  .card {
+    @apply rounded-2xl bg-white p-4;
+  }
+
+  .card-header {
+    @apply text-lg font-bold underline mb-3;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --color-primary-0: 13 14 17;
+  --color-primary-50: 246 245 245;
+  --color-primary-100: 237 237 237;
+  --color-primary-200: 221 221 221;
+  --color-primary-300: 204 204 204;
+  --color-primary-400: 179 179 179;
+  --color-primary-500: 153 153 153;
+  --color-primary-700: 102 102 102;
+  --color-primary-900: 51 51 51;
+  --color-primary-black: 13 14 17;
+  --color-secondary: 255 255 255;
+  --color-secondary-900: 226 232 240;
+  --color-secondary-800: 148 163 184;
+  --color-link: 33 150 243;
+  --blue: 11 75 173;
+  --bg-color: 15 23 42;
 }
 
+
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
+	--color-primary-0: rgb(var(--color-primary-0));
+	--color-primary-50: rgb(var(--color-primary-50));
+	--color-primary-100: rgb(var(--color-primary-100));
+	--color-primary-200: rgb(var(--color-primary-200));
+	--color-primary-300: rgb(var(--color-primary-300));
+	--color-primary-400: rgb(var(--color-primary-400));
+	--color-primary-500: rgb(var(--color-primary-500));
+	--color-primary-700: rgb(var(--color-primary-700));
+	--color-primary-900: rgb(var(--color-primary-900));
+	--color-primary-black: rgb(var(--color-primary-black));
+	--color-secondary: rgb(var(--color-secondary));
+	--color-secondary-900: rgb(var(--color-secondary-900));
+	--color-secondary-800: rgb(var(--color-secondary-800));
+	--color-link: rgb(var(--color-link));
+	--blue: rgb(var(--blue));
+	--bg-color: rgb(var(--bg-color));
+  }
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -18,9 +71,96 @@
     --foreground: #ededed;
   }
 }
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  color: rgb(var(--color-primary-800));
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--text-link);
+    border-radius: 10px;
+  }
+}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  font-size: 14px;
+  background-color: rgb(var(--color-primary-800));
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+li::marker {
+  content: "•   ";
+}
+
+.background-grid {
+  background-color: rgb(var(--color-primary-0) / 70%);
+  background-image: linear-gradient(
+      rgb(var(--color-primary-0) / 30%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgb(var(--color-primary-0) / 30%) 1px,
+      transparent 1px
+    );
+  background-size: 10px 10px;
+}
+
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50%);
+    /* stylelint-disable-next-line order/properties-order */
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    /* stylelint-disable-next-line order/properties-order */
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(50%);
+    /* stylelint-disable-next-line order/properties-order */
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    /* stylelint-disable-next-line order/properties-order */
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  to {
+    offset-distance: 100%;
+  }
 }
