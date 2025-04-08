@@ -12,7 +12,7 @@
 	width: 100%;
 	height: unset;
 	margin: 0;
-	color: var(--color-secondary-800);
+	color: rgb(var(--color-secondary-800));
   }
   
   .solarSystemBackground-wrapper ol {
