@@ -56,6 +56,7 @@ const Exprerience = ({ style }: { style?: CSSProperties }) => {
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
+      
     </div>
   );
 };
