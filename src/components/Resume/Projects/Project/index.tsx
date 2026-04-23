@@ -3,7 +3,7 @@ export interface ProjectProps {
   description: (string | React.ReactElement)[];
   role: string;
   date?: string;
-  technologyUsed: string;
+  technologyUsed: string | string[];
   teamSize?: string;
   responsibilities?: string[];
 }
@@ -36,8 +36,16 @@ const Project = ({
           {date && <span className="ml-2 text-xs text-gray-500 italic">{date}</span>}
         </li>
         <li>
-          <span className="font-semibold">Technology used:</span>{" "}
-          {technologyUsed}
+          <span className="font-semibold">Technologies used:</span>
+          {Array.isArray(technologyUsed) ? (
+            <ul className="border-l-2 border-primary-300 pl-2">
+              {technologyUsed.map((tech) => (
+                <li key={tech}>{tech}</li>
+              ))}
+            </ul>
+          ) : (
+            technologyUsed
+          )}
         </li>
         {teamSize && (
           <li>

@@ -37,7 +37,7 @@ const Exprerience = ({ style }: { style?: CSSProperties }) => {
           contentArrowStyle={{
             borderRight: "8px solid  rgb(var(--color-link))",
           }}
-          date="10/2024 - 10/2025"
+          date="10/2024 - 11/2025"
           iconStyle={{ background: "rgb(var(--color-link))", color: "#fff" }}
           icon={<Bag />}
         >

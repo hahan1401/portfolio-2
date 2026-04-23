@@ -1,14 +1,6 @@
 @import "tailwindcss";
 
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-
   .card {
     @apply rounded-2xl bg-white p-4;
   }

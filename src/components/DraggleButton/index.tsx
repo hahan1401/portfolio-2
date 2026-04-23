@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 const DraggableButton = () => {
   useEffect(() => {
-    dragElement(document.getElementById("mydiv")!);
+    dragElement(document.getElementById("view-pdf-button")!);
 
     function dragElement(elmnt: HTMLElement) {
       let pos1 = 0,
@@ -51,7 +51,7 @@ const DraggableButton = () => {
           oldPosition.offsetTop === elmnt.offsetTop &&
           oldPosition.offsetLeft === elmnt.offsetLeft
         ) {
-          window.open("/Han_Viet_Ha-FrontEnd-Resume.pdf");
+          window.open("/Han_Viet_Ha-Fullstack-Resume.pdf");
         }
         // stop moving when mouse button is released:
         document.onmouseup = null;
@@ -61,7 +61,7 @@ const DraggableButton = () => {
   }, []);
   return (
     <button
-      id="mydiv"
+      id="view-pdf-button"
       className={`cursor-pointer absolute left-[65%] top-[45px] z-50 flex h-8 w-28 items-center justify-center gap-1 rounded-3xl bg-link opacity-40 hover:opacity-100 sm:left-[70%] md:left-[50%] md:translate-x-[262px] ${styles.button}`}
     >
       <span className="font-bold text-white">View PDF </span>

@@ -10,8 +10,10 @@ const PROJECTS = [
       "An internal web app to manage workers, capacity, resource in a organization.",
     ],
     role: "Fullstack Developer",
-    technologyUsed:
-      "Backend: Express.Js, Redis, Bull, Websocket, Joi, PostgreSql, ... | Frontend: Angular, Bootstrap, ...",
+    technologyUsed:[
+      "Backend: Express.Js, Redis, Bull, Websocket, Joi, PostgreSql, ...",
+      "Frontend: Angular, Bootstrap, ...",
+    ],
     teamSize: "7 - 12",
     responsibilities: [
       "Providing solutions advice to customers",
@@ -74,8 +76,10 @@ const PROJECTS = [
       "Management social accounts of users and post posts on social medias simultaneously: Facebook, Instagram, Linkedin, Reddit, Youtube, ...",
     ],
     role: "Fullstack Developer",
-    technologyUsed:
-      "Frontend: HTML, CSS, Vite.js, React.js, Redux-toolkit, Ant Design, recharts, Google Api, Meta Api, ... | Backend: Nest.js, MongoDb, Passport.Js, AWS SES, Bull, Redis, ...",
+    technologyUsed:[
+      "Frontend: HTML, CSS, Vite.js, React.js, Redux-toolkit, Ant Design, recharts, Google Api, Meta Api, ..",
+      "Backend: Nest.js, MongoDb, Passport.Js, AWS SES, Bull, Redis, ..."
+    ],
     teamSize: "5 - 7",
     responsibilities: [
       "Manage team members, source code",

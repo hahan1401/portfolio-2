@@ -13,7 +13,7 @@ const Resume = () => {
         <div
           className={`background-grid fixed top-0 z-50 h-full w-full overflow-auto`}
         >
-          <div className="mx-auto max-w-[800px] px-2 py-10 sm:px-4">
+          <div className="mx-auto max-w-[1000px] px-2 py-10 sm:px-4">
             <BasicInformation style={{ animation: "fade-up 0.7s ease-out" }} />
             <div className="mt-4 gap-4 sm:flex">
               <div className="flex-1">
