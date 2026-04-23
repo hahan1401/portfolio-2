@@ -1,5 +1,7 @@
-import { FC, SVGProps } from 'react';
+import { FC, SVGProps } from "react";
 
-import Icon from '../svgs/linkedin.svg';
+import Icon from "../svgs/linkedin.svg";
 
-export const Linkedin: FC<SVGProps<SVGSVGElement>> = (props) => <Icon {...props} />;
+export const Linkedin: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <Icon {...props} />
+);

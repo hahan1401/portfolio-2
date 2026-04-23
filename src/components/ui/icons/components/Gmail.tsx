@@ -1,5 +1,7 @@
-import { FC, SVGProps } from 'react';
+import { FC, SVGProps } from "react";
 
-import Icon from '../svgs/gmail.svg';
+import Icon from "../svgs/gmail.svg";
 
-export const Gmail: FC<SVGProps<SVGSVGElement>> = (props) => <Icon {...props} />;
+export const Gmail: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <Icon {...props} />
+);

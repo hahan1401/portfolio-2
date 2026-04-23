@@ -27,12 +27,15 @@ const Exprerience = ({ style }: { style?: CSSProperties }) => {
           iconStyle={{ background: "rgb(var(--color-link))", color: "#fff" }}
           icon={<Bag />}
         >
-          <p className="vertical-timeline-element-title m-0!">
-            CMC Global
-          </p>
+          <p className="vertical-timeline-element-title m-0!">CMC Global</p>
           <h4 className="vertical-timeline-element-subtitle">Hanoi, Vietnam</h4>
           <p className="font-normal! md:text-sm!">
-		  CMC Global, a member of CMC Technology Group, was established on March 31, 2017. CMC Global was established with the vision of becoming a Top 10 service company in the region, and a leading unit in the capacity to deploy new technology solutions such as AI, Cloud and digital transformation and the mission of &quot;creating international standard services, with a global presence&quot;
+            CMC Global, a member of CMC Technology Group, was established on
+            March 31, 2017. CMC Global was established with the vision of
+            becoming a Top 10 service company in the region, and a leading unit
+            in the capacity to deploy new technology solutions such as AI, Cloud
+            and digital transformation and the mission of &quot;creating
+            international standard services, with a global presence&quot;
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -56,7 +59,6 @@ const Exprerience = ({ style }: { style?: CSSProperties }) => {
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
-      
     </div>
   );
 };

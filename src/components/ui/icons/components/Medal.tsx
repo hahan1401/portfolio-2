@@ -1,5 +1,7 @@
-import { FC, SVGProps } from 'react';
+import { FC, SVGProps } from "react";
 
-import Icon from '../svgs/medal.svg';
+import Icon from "../svgs/medal.svg";
 
-export const Medal: FC<SVGProps<SVGSVGElement>> = (props) => <Icon {...props} />;
+export const Medal: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <Icon {...props} />
+);

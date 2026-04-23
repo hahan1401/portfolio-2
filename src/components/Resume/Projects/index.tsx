@@ -67,7 +67,7 @@ const PROJECTS = [
         className="text-link"
       >
         https://github.com/hahan1401/spring-authentication-authorization
-      </Link>
+      </Link>,
     ],
     role: "Owner",
     technologyUsed: "Springboot",

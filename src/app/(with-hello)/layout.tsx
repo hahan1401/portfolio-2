@@ -1,14 +1,14 @@
-import FullPageOverlayLoading from '@/components/FullPageOverlayLoading';
+import FullPageOverlayLoading from "@/components/FullPageOverlayLoading";
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<>
-			<FullPageOverlayLoading />
-			{children}
-		</>
-	);
+  return (
+    <>
+      <FullPageOverlayLoading />
+      {children}
+    </>
+  );
 }

@@ -1,11 +1,11 @@
-import Resume from '@/components/Resume';
+import Resume from "@/components/Resume";
 
 const page = () => {
-	return (
-		<>
-			<Resume />
-		</>
-	);
+  return (
+    <>
+      <Resume />
+    </>
+  );
 };
 
 export default page;
