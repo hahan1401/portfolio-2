@@ -4,38 +4,182 @@ import Link from "next/link";
 
 const PROJECTS = [
   {
+    name: "Internal Tool",
+    date: "Jan 2025 - Present",
+    description: [
+      "An internal web app to manage workers, capacity, resource in a organization.",
+    ],
+    role: "Fullstack Developer",
+    technologyUsed:
+      "Backend: Express.Js, Redis, Bull, Websocket, Joi, PostgreSql, ... | Frontend: Angular, Bootstrap, ...",
+    teamSize: "7 - 12",
+    responsibilities: [
+      "Providing solutions advice to customers",
+      "Develop new features",
+      "Review code",
+    ],
+  },
+  {
+    name: "Kickle App",
+    date: "Aug 2025 - Nov 2025",
+    description: [
+      "An social app, allow users to manage tournament, and for the assessment of other people's abilities and attitudes.",
+    ],
+    role: "Backend Developer",
+    technologyUsed:
+      "NestJs, Meta API, RabbitMQ, AWS SES, PostgreSql, Socket.IO, Firebase, ...",
+    teamSize: "3 - 5",
+    responsibilities: [
+      "Init, implement authentication, define rules",
+      "Design database, design architecture",
+      "Review code",
+    ],
+  },
+  {
+    name: "Orient Futures International Singapore (OFIS)",
+    date: "Jun 2025 - Jan 2026",
+    description: ["(B2B) Financial project to manage client requests."],
+    role: "Frontend Leader",
+    technologyUsed:
+      "React, Javascript/Typescript, Azure/MSAL, Ant, Zustand, Yup, React-query, ...",
+    teamSize: "7 - 12",
+    responsibilities: [
+      "Init, setup Gitlab action, implement MSAL, setup base (component, theme, ...), optimize build time, ...",
+      "Estimate, break tasks",
+      "Review code",
+      "Daily sync-up with client & solution discussion",
+    ],
+  },
+  {
     name: "Mha Intranet",
+    date: "Oct 2024 - Jun 2025",
     description: [
       "Developed a Sharepoint intranet to enhance content management, collaboration and communication. Enable adminstrators to effeciently create and manage content, configure web parts, and organnize and engaging with information, improving departmental collaboration.",
     ],
-    role: "Frontend Developer",
+    role: "Developer",
     technologyUsed: "React, Javascript/Typescript, SPFx, Pnp/Sp, ...",
     teamSize: "10 - 20",
     responsibilities: [
       "Define rules to match sonarqube",
+      "Review code",
+      "Daily sync-up with client & solution discussion",
       "Create webparts & implement sharepoint permission",
       "Custom sharepoint functions",
     ],
   },
   {
-    name: "Portfolio",
+    name: "Management Social Accounts",
+    date: "Aug 2024 - Oct 2024",
     description: [
-      <Link
-        key="https://hahan-portfolio.vercel.app/"
-        href="https://hahan-portfolio.vercel.app/"
-        target="_blank"
-        className="text-link"
-      >
-        https://hahan-portfolio.vercel.app/
-      </Link>,
+      "Management social accounts of users and post posts on social medias simultaneously: Facebook, Instagram, Linkedin, Reddit, Youtube, ...",
     ],
-    role: "Owner",
-    technologyUsed: "Vite, React, Rollup, …",
+    role: "Fullstack Developer",
+    technologyUsed:
+      "Frontend: HTML, CSS, Vite.js, React.js, Redux-toolkit, Ant Design, recharts, Google Api, Meta Api, ... | Backend: Nest.js, MongoDb, Passport.Js, AWS SES, Bull, Redis, ...",
+    teamSize: "5 - 7",
+    responsibilities: [
+      "Manage team members, source code",
+      "Create rules: eslint, prettier",
+      "Integration 3rd party",
+      "Design database",
+      "Review code",
+      "Research technologies to use for the project, solutions that optimize performance and user experience",
+    ],
   },
   {
-    name: "React ui & utility typescript lib",
+    name: "Fandelo One (Bluebottle Digital Vietnam)",
+    date: "Nov 2023 - Jul 2024",
     description: [
-      "React library base on Tailwindcss, Shadcn, built by Vite & Rollup.",
+      "Web app to manage all things finance, end-to-end. Track your pipeline and sync your existing finance system. Green-light bookings, sign contracts, ...",
+    ],
+    role: "Frontend Developer",
+    technologyUsed:
+      "HTML, CSS, Tailwindcss, NextAuth, Nextjs, React-query, Hellosign, Xero, Socket.IO, Springboot, MongoDb, ...",
+    teamSize: "10 - 20",
+    responsibilities: [
+      "Init project: layout, styling, rules, implement authentication, ...",
+      "Review code, manage source",
+      "Discuss with BA & develop team to analysis requirements",
+      "Research the latest technologies to use for the project, solutions that optimize performance and user experience",
+      "Create backend api",
+    ],
+  },
+  {
+    name: "Fandelo Cms (Bluebottle Digital Vietnam)",
+    date: "Jan 2023 - Jul 2024",
+    description: ["Web app to manage contents and users for Fandelo native app"],
+    role: "Frontend Developer",
+    technologyUsed:
+      "HTML, CSS, Tailwindcss, Nextjs, React-query, Ant Design, ...",
+    teamSize: "5 - 10",
+    responsibilities: [
+      "Do all the Frontend stuffs, layout, styling",
+      "Refactor, update project base",
+      "Integration with back-end, 3rd party",
+      "Research the latest technologies to use for the project, solutions that optimize performance and user experience",
+    ],
+  },
+  {
+    name: "Believe Tasmanian (Bluebottle Digital Vietnam)",
+    date: "Jul 2023 - Sep 2023",
+    description: [
+      "This is the landing page of an organization that inspires and supports young men and women to play the sport of Tassie jumper, combined with selling athletic apparel in Hobart, TAS, Tasmania, Australia.",
+    ],
+    role: "Frontend Developer",
+    technologyUsed: "Nextjs, HTML, CSS, Tailwindcss, Shopify Api, ...",
+    teamSize: "10 - 15",
+    responsibilities: [
+      "Init, create base components, rules and develop",
+      "Research the latest technologies to use for the project, solutions that optimize performance and user experience",
+      "SEO optimization",
+    ],
+  },
+  {
+    name: "Fandelo landing page (Bluebottle Digital Vietnam)",
+    date: "Feb 2023 - Apr 2024",
+    description: [
+      "Modern animated UI landing page to reboot Fandelo Cms into Fandelo One",
+    ],
+    role: "Frontend Developer",
+    technologyUsed: "Nextjs, HTML, CSS, Tailwindcss, Frame motion, ...",
+    teamSize: "2 - 5",
+    responsibilities: [
+      "Research the latest technologies to use for the project, solutions that optimize performance and user experience",
+      "SEO optimization",
+    ],
+  },
+  {
+    name: "Prism admin (Bluebottle Digital Vietnam)",
+    date: "Apr 2022 - Jan 2023",
+    description: [
+      "Manage and connect organizations and individuals providing and using services for horse racing",
+    ],
+    role: "Frontend Developer",
+    technologyUsed: "Angular, Hellosign, Xero, bootstrap, Redux, ...",
+    teamSize: "10 - 20",
+    responsibilities: [
+      "Integration with back-end, 3rd party",
+      "Research the latest technologies to use for the project, solutions that optimize performance and user experience",
+    ],
+  },
+  {
+    name: "Prism Trainer Website (Bluebottle Digital Vietnam)",
+    date: "Apr 2022 - Jan 2023",
+    description: ["Personal websites for Prism users"],
+    role: "Developer",
+    technologyUsed:
+      "HTML, CSS, Reactjs, Nextjs, Ant design, Bootstrap, Tailwindcss, Chakra ui, ...",
+    teamSize: "10 - 20",
+    responsibilities: [
+      "Do all the Frontend stuffs, layout, styling",
+      "Research the latest technologies to use for the project, solutions that optimize performance and user experience",
+      "SEO optimization",
+    ],
+  },
+  {
+    name: "Ui & utility typescript lib",
+    description: [
+      "React library based on Tailwindcss, Shadcn, built by Vite & Rollup.",
       <Link
         key="https://github.com/hahan1401/ui-lib"
         href="https://github.com/hahan1401/ui-lib"
@@ -54,114 +198,7 @@ const PROJECTS = [
       </Link>,
     ],
     role: "Owner",
-    technologyUsed: "Nextjs, Fammer motion, ...",
-  },
-  {
-    name: "Spring authentication & authorization",
-    description: [
-      "Personal project for studying authentication & authorization: ",
-      <Link
-        key="https://github.com/hahan1401/spring-authentication-authorization"
-        href="https://github.com/hahan1401/spring-authentication-authorization"
-        target="_blank"
-        className="text-link"
-      >
-        https://github.com/hahan1401/spring-authentication-authorization
-      </Link>,
-    ],
-    role: "Owner",
-    technologyUsed: "Springboot",
-  },
-  {
-    name: "Management Social Accounts",
-    description: [
-      "Management social accounts of users and manage posts on social medias: Facebook, Instagram, Linkedin, Reddit, Youtube, ...",
-    ],
-    role: "Fullstack Developer",
-    technologyUsed:
-      "React, Atn desing, Tailwindcss, Google Api, Meta Api, NestJs, MongoDb, ...",
-    teamSize: "3 - 5",
-    responsibilities: [
-      "Integration with 3rd party, create rules",
-      "Review code",
-      "Design database ",
-      "Research the latest technologies to use for the project, solutions that optimize performance and user experience",
-      "Deploy, separate env",
-    ],
-  },
-  {
-    name: "Fandelo One",
-    description: [
-      "Web app to manage all things finance, end-to-end. Track your pipeline and sync your existing finance system. Green-light bookings, sign contracts, …",
-    ],
-    role: "Frontend Developer",
-    technologyUsed:
-      "Next.Js, Tanstack quey, Tanstack table, Next-auth, Hellosign, Xero, Mantine, Tailwindcss, Spring boot, ...",
-    teamSize: "10 - 20",
-    responsibilities: [
-      "Contribute to first base Frontend stuffs: layout, styling, rules, implement authentication, …",
-      "Discuss with BA & Develop team to analysis requirements",
-      "Review code. ",
-      "Research the latest technologies to use for the project, solutions that optimize performance and user experience",
-      "Create docker deploy script",
-      "Create backend api",
-    ],
-  },
-  {
-    name: "Fandelo Cms",
-    description: [
-      "Web app to manage content for Fandelo native app, manage users",
-    ],
-    role: "Frontend Developer",
-    technologyUsed:
-      "HTML, CSS, Tailwindcss, NextAuth, Nextjs, Hellosign, Xero, Socket, ...",
-    teamSize: "10 - 20",
-    responsibilities: [
-      "Create app base on Nextjs",
-      "Contribute to first base Frontend stuff, layout, styling",
-      "Research the latest technologies to use for the project, solutions that optimize performance and userexperience",
-    ],
-  },
-  {
-    name: "Fandelo One landing page",
-    description: [
-      "Landing Page to Reboot Fandelo Cms into Fandelo one with Modern Animated UI",
-    ],
-    role: "Frontend Developer",
-    technologyUsed:
-      "HTML, CSS, Tailwindcss, NextAuth, Nextjs, Hellosign, Xero, Socket, ...",
-    teamSize: "3 - 5",
-    responsibilities: [
-      "Research the latest technologies to use for the project, solutions that optimize performance and user experience.",
-      "SEO optimization.",
-    ],
-  },
-  {
-    name: "Prism admin",
-    description: [
-      "Manage and connect organizations and individuals providing and using services for horse racing",
-    ],
-    role: "Frontend Developer",
-    technologyUsed: "Angular, Hellosign, Xero, bootstrap, Redux, ...",
-    teamSize: "10 - 20",
-    responsibilities: [
-      "Integration with backend, 3rd party",
-      "Research the latest technologies to use for the project, solutions that optimize performance and user experience.",
-    ],
-  },
-  {
-    name: "Believe Tasmanian, Prism Trainer Website, ...",
-    description: [
-      "Landing page for an organization that inspire and support young women and men to play in the Tassie jumper in Hobart, TAS, Australia, Tasmania",
-      "Personal websites for Prism users",
-    ],
-    role: "Frontend Developer",
-    technologyUsed: "Angular, Hellosign, Xero, bootstrap, Redux, ...",
-    teamSize: "10 - 20",
-    responsibilities: [
-      "Integration with backend, 3rd party",
-      "Research the latest technologies to use for the project, solutions that optimize performance and user experience.",
-    ],
+    technologyUsed: "React, Tailwindcss, Shadcn, Vite, Rollup, ...",
   },
 ];
 const Projects = ({ style }: { style?: CSSProperties }) => {
@@ -175,6 +212,7 @@ const Projects = ({ style }: { style?: CSSProperties }) => {
             name={project.name}
             description={project.description}
             role={project.role}
+            date={project.date}
             technologyUsed={project.technologyUsed}
             teamSize={project.teamSize}
             responsibilities={project.responsibilities}

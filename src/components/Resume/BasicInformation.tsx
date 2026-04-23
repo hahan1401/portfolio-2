@@ -8,7 +8,7 @@ const BasicInformation = ({ style }: { style?: CSSProperties }) => {
     <div className="card text-center" style={style}>
       <p className="text-2xl font-bold">Ha Han</p>
       <span className="rounded-2xl bg-yellow-400 px-2 py-[2px] text-sm font-bold">
-        Front-end Developer
+        Fullstack Developer
       </span>
       <div className="mt-2 flex flex-wrap justify-center gap-3 px-4">
         <Link

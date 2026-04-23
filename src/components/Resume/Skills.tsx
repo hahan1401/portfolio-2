@@ -4,24 +4,13 @@ const Skills = ({ style }: { style?: CSSProperties }) => {
   return (
     <div className="card mt-4" style={style}>
       <p className="card-header ">Skills</p>
-      <div className="flex gap-4">
-        <p className="w-8 font-bold text-link">Main:</p>
-        <ul className="list-inside list-disc">
-          <li>Proficiency in HTML, CSS, JavaScript, Typescrip, Nextjs</li>
-          <li>Responsive Design</li>
-          <li>Web Performance Optimization</li>
-          <li>Proficient use of source code management tool: GIT</li>
-        </ul>
-      </div>
-
-      <div className="mt-2 flex gap-4">
-        <p className="w-8 font-bold text-link">Other:</p>
-        <ul className="list-inside list-disc">
-          <li>Springboot, Nestjs</li>
-          <li>CI/CD</li>
-          <li>Docker</li>
-        </ul>
-      </div>
+      <ul className="list-inside list-disc text-sm">
+        <li>Proficiency in Reactjs/Nextjs, Nestjs, HTML, CSS, JavaScript/Typescript</li>
+        <li>Responsive Design</li>
+        <li>Web Performance Optimization</li>
+        <li>Proficient use of source code management tool: GIT</li>
+        <li>RESTful APIs, CI/CD, Docker, AWS</li>
+      </ul>
     </div>
   );
 };

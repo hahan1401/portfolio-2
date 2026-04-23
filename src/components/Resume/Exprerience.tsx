@@ -23,20 +23,12 @@ const Exprerience = ({ style }: { style?: CSSProperties }) => {
           contentArrowStyle={{
             borderRight: "8px solid  rgb(var(--color-link))",
           }}
-          date="11/2024 - present"
+          date="01/2026 - present"
           iconStyle={{ background: "rgb(var(--color-link))", color: "#fff" }}
           icon={<Bag />}
         >
-          <p className="vertical-timeline-element-title m-0!">CMC Global</p>
-          <h4 className="vertical-timeline-element-subtitle">Hanoi, Vietnam</h4>
-          <p className="font-normal! md:text-sm!">
-            CMC Global, a member of CMC Technology Group, was established on
-            March 31, 2017. CMC Global was established with the vision of
-            becoming a Top 10 service company in the region, and a leading unit
-            in the capacity to deploy new technology solutions such as AI, Cloud
-            and digital transformation and the mission of &quot;creating
-            international standard services, with a global presence&quot;
-          </p>
+          <p className="vertical-timeline-element-title m-0!">FPT Software</p>
+          <h4 className="vertical-timeline-element-subtitle">Software Engineer</h4>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           visible={true}
@@ -45,18 +37,28 @@ const Exprerience = ({ style }: { style?: CSSProperties }) => {
           contentArrowStyle={{
             borderRight: "8px solid  rgb(var(--color-link))",
           }}
-          date="04/2022 - present"
+          date="10/2024 - 10/2025"
+          iconStyle={{ background: "rgb(var(--color-link))", color: "#fff" }}
+          icon={<Bag />}
+        >
+          <p className="vertical-timeline-element-title m-0!">CMC Global</p>
+          <h4 className="vertical-timeline-element-subtitle">Software Engineer</h4>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          visible={true}
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(var(--color-link))", color: "#fff" }}
+          contentArrowStyle={{
+            borderRight: "8px solid  rgb(var(--color-link))",
+          }}
+          date="04/2022 - 07/2024"
           iconStyle={{ background: "rgb(var(--color-link))", color: "#fff" }}
           icon={<Bag />}
         >
           <p className="vertical-timeline-element-title m-0!">
             Bluebottle Digital Vietnam
           </p>
-          <h4 className="vertical-timeline-element-subtitle">Hanoi, Vietnam</h4>
-          <p className="font-normal! md:text-sm!">
-            A boutique digital developer, helping to design, develop and manage
-            innovative web & mobile solutions
-          </p>
+          <h4 className="vertical-timeline-element-subtitle">Frontend Developer</h4>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

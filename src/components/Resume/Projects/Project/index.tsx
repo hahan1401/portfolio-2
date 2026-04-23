@@ -2,6 +2,7 @@ export interface ProjectProps {
   name: string;
   description: (string | React.ReactElement)[];
   role: string;
+  date?: string;
   technologyUsed: string;
   teamSize?: string;
   responsibilities?: string[];
@@ -11,6 +12,7 @@ const Project = ({
   name,
   description,
   role,
+  date,
   technologyUsed,
   teamSize,
   responsibilities,
@@ -31,6 +33,7 @@ const Project = ({
         </li>
         <li>
           <span className="font-semibold">Role:</span> {role}
+          {date && <span className="ml-2 text-xs text-gray-500 italic">{date}</span>}
         </li>
         <li>
           <span className="font-semibold">Technology used:</span>{" "}
